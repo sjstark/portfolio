@@ -5,7 +5,7 @@ function App() {
   const [lights, setLights] = useState(false)
 
   return (
-    <div style={{ background: 'black', width: '100vw', height: '100vh' }}>
+    <div style={{ background: 'white', width: '100vw', height: '100vh' }}>
       <String />
     </div>
   );

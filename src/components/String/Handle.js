@@ -46,7 +46,7 @@ export default function Handle({ stringLength = 300, handleWidth = 20 }) {
 
   return (
     <>
-      <div style={{ border: '2px dashed yellow', width: stringLength * 2, height: stringLength * 2, borderRadius: '50%', position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, margin: 'auto' }} />
+      <div style={{ border: '2px dashed red', width: stringLength * 2, height: stringLength * 2, borderRadius: '50%', position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, margin: 'auto' }} />
       <animated.div {...bind()} className='string__handle'
         style={{
           width: `${handleWidth}px`,
