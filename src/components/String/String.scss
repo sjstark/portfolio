@@ -1,0 +1,42 @@
+
+.string {
+
+  &__handle{
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+
+
+    display: inline-block;
+    width: 2vw;
+    height: 2vw;
+    min-width: 25px;
+    min-height: 25px;
+    margin: 0;
+    border-radius: 50%;
+    position: relative;
+    // background: white;
+    background: radial-gradient(circle at 50% 120%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);
+
+    overflow: hidden;
+    cursor: grab;
+
+    &:active{
+      cursor: grabbing;
+    }
+
+    &:before{
+      content: "";
+      position: absolute;
+      top: 1%;
+      left: 5%;
+      width: 90%;
+      height: 90%;
+      border-radius: 50%;
+      overflow: hidden;
+      background: radial-gradient(circle at 50% 0px, #ffffff, rgba(255, 255, 255, 0) 58%);
+      filter: blur(5px);
+      z-index: 2;
+    }
+  }
+}
