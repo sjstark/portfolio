@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+
 import Navbar from './components/Navbar'
 import Intro from './components/Intro'
 import About from './components/About'
@@ -8,15 +9,27 @@ import Contact from './components/Contact'
 
 function App() {
 
+  const [page, setPage] = useState(null)
+
+  useEffect(() => {
+    console.log(page)
+  }, [page])
+
+  const handlePageChange = (number) => {
+    setPage(number)
+  }
+
   return (
-    <div style={{ background: 'white', width: '100vw', height: '100vh' }}>
-      <Navbar />
-      <Intro />
+    <>
+      {/* <Navbar /> */}
+
+      {/* <Intro /> */}
       <About />
-      <Projects />
-      <Skills />
-      <Contact />
-    </div>
+      {/* <Projects /> */}
+      {/* <Skills /> */}
+      {/* <Contact /> */}
+
+    </>
   );
 }
 

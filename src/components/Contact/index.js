@@ -3,7 +3,7 @@ import resume from '../../media/STARK_SAM_RESUME.pdf'
 
 export default function Contact() {
   return (
-    <div>
+    <div >
       <div>
         <a href={resume} download>Resume</a>
       </div>
